@@ -53,6 +53,46 @@ PEEP emits normalized interaction events
 
 PEEP must not decide whether the model learned anything.
 
+## Capture Principle — Preserve Available Metadata
+
+At the observation boundary, capture as much available metadata as can be reliably observed.
+
+Do not discard metadata merely because its future use or implication is not yet understood.
+
+Interpretation and relevance decisions happen later. Capture comes first.
+
+Where observable, interaction records should preserve metadata such as:
+
+- provider identity;
+- product or surface identity;
+- model identity;
+- page URL and origin;
+- conversation identity;
+- runtime identity;
+- session identity;
+- turn identity;
+- event identity;
+- role or speaker identity;
+- timestamps;
+- ordering and sequence information;
+- rendering or completion state;
+- browser/page context;
+- interaction content;
+- observation source;
+- correlation identifiers;
+- integrity metadata; and
+- other metadata exposed by the observed surface.
+
+The capture layer must distinguish observed metadata from inferred metadata when that distinction matters. Unknown values remain unknown rather than being fabricated.
+
+The governing principle is:
+
+```text
+CAPTURE WHAT IS AVAILABLE
+PRESERVE IT FAITHFULLY
+DECIDE WHAT IT MEANS LATER
+```
+
 ## DEVSnitcher — Component Mine, Not Replacement
 
 DEVSnitcher remains its own standalone product.
@@ -136,23 +176,30 @@ The evaluator sees the completed interaction as an external object of observatio
 
 The preferred evaluation unit is the completed interaction, not an isolated assistant message.
 
-Where available, the record should preserve both sides:
+Where available, the record should preserve both sides together with the broad metadata captured at the observation boundary:
 
 ```text
 USER MESSAGE
 +
 ASSISTANT RESPONSE
 +
+PROVIDER / PRODUCT / MODEL IDENTITY
++
 RUNTIME / SESSION / TURN IDENTITY
 +
+TIMING / ORDER / COMPLETION STATE
++
 OBSERVATION / INTEGRITY METADATA
++
+OTHER AVAILABLE OBSERVED METADATA
 ```
 
-This allows the evaluator to distinguish a model-generated idea from an actual correction, instruction, demonstrated failure, or durable lesson established through interaction.
+This allows the evaluator to distinguish a model-generated idea from an actual correction, instruction, demonstrated failure, or durable lesson established through interaction, while preserving information whose relevance may only become clear later.
 
 ## Architectural Boundaries
 
 - PEEP observes; it does not reason about learning.
+- PEEP captures broadly rather than prematurely discarding observable metadata.
 - RATTER preserves; it does not decide meaning.
 - The companion interprets; it does not become the acting chat agent.
 - DEVSnitcher remains a separate product and serves only as a source of reusable browser-capture technology where appropriate.
@@ -168,6 +215,7 @@ It externalizes several functions around an otherwise stateless or session-limit
 
 ```text
 observation
+→ broad metadata capture
 → persistence
 → completed-event inspection
 → lesson admission
