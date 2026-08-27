@@ -175,6 +175,17 @@ Do not create dummy, placeholder, probe, temporary, or no-op files or commits in
 
 Discover and verify the required write capability before invoking a mutating repository action. If an unintended placeholder write occurs, disclose it immediately and remove it without mixing it into product logic.
 
+## DR-018 — Builder Handoffs Stay Inside One Markdown Artifact
+
+**Established:** 2026-08-27  
+**Basis:** Explicit instruction from Darren after HACKASS emergency builder instructions
+
+When giving Darren instructions intended for a builder, agent, coding assistant, or other implementation executor, put the complete transferable instruction set in one Markdown artifact.
+
+Keep assistant commentary, diagnosis, caveats, and surrounding explanation outside that Markdown artifact unless Darren explicitly asks for them to be included.
+
+The Markdown artifact should be copyable as-is and should not require Darren to strip conversational text before handing it to the builder.
+
 ---
 
 Return to the controlling authority:
