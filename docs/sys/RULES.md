@@ -166,6 +166,15 @@ The evidentiary threshold for acting on an inference rises with the consequence 
 
 Inference may establish a bearing. It does not create authority.
 
+## DR-017 — Do Not Probe Repository Writes With Placeholder Files
+
+**Established:** 2026-08-27  
+**Basis:** Concrete tooling failure during the HACKASS Sherlock-contamination cleanup
+
+Do not create dummy, placeholder, probe, temporary, or no-op files or commits in a project repository merely to test, discover, load, or prepare a repository-writing tool path.
+
+Discover and verify the required write capability before invoking a mutating repository action. If an unintended placeholder write occurs, disclose it immediately and remove it without mixing it into product logic.
+
 ---
 
 Return to the controlling authority:
