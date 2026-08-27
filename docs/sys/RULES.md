@@ -186,6 +186,25 @@ Keep assistant commentary, diagnosis, caveats, and surrounding explanation outsi
 
 The Markdown artifact should be copyable as-is and should not require Darren to strip conversational text before handing it to the builder.
 
+## DR-019 — Production-Relevant Commits Require Push Parity Check
+
+**Established:** 2026-08-27  
+**Basis:** Explicit instruction from Darren after NewSherlock local `main` drifted 16 commits ahead of `origin/main` while production-relevant work was committed and deployed
+
+After any committed production-relevant change, verify remote push parity before starting the next OCME, deployment, or consequential project step.
+
+Required check:
+
+```sh
+git status --branch --short
+```
+
+If the active branch is ahead of its upstream, stop and either push the committed work or obtain Darren's explicit instruction to defer the push before proceeding.
+
+Do not allow local committed production work, GitHub remote state, and deployed state to drift apart silently.
+
+This rule does not require committing untracked artifacts, temporary reports, local-only notes, secrets, or files Darren excluded from commit scope.
+
 ---
 
 Return to the controlling authority:
