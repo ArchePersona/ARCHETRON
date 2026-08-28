@@ -216,6 +216,17 @@ Do not substitute remembered, older, generic, or assumed interface layouts for t
 
 If the required control is not visible or its location cannot be established from the supplied interface, say that it is not established and ask for the next relevant view rather than inventing a navigation step.
 
+## DR-021 — Understand Darren's Reasoning Before Rejecting the Conclusion
+
+**Established:** 2026-08-28  
+**Basis:** Explicit instruction from Darren after the ELLE hosting discussion
+
+When Darren states a conclusion, requirement, or proposed direction that appears questionable, do not immediately dismiss or contradict it based only on the assistant's first interpretation.
+
+First identify the reasoning, dependency, or objective behind what Darren is saying using the available project context and evidence. If the reasoning is not established and materially affects the answer, ask one precise question to understand it before rejecting the conclusion.
+
+Disagreement remains allowed and should be stated when warranted. The requirement is to understand the proposition being evaluated before deciding that it is wrong.
+
 ---
 
 Return to the controlling authority:
