@@ -205,6 +205,17 @@ Do not allow local committed production work, GitHub remote state, and deployed 
 
 This rule does not require committing untracked artifacts, temporary reports, local-only notes, secrets, or files Darren excluded from commit scope.
 
+## DR-020 — Ground UI Guidance in the User's Actual Interface
+
+**Established:** 2026-08-28  
+**Basis:** Explicit correction from Darren after the assistant invented a Firebase console navigation item that was not present in the screenshot
+
+When Darren provides a screenshot or other current visual evidence of an interface, use the controls, labels, navigation, and state actually visible there when giving step-by-step UI instructions.
+
+Do not substitute remembered, older, generic, or assumed interface layouts for the interface Darren is actually showing.
+
+If the required control is not visible or its location cannot be established from the supplied interface, say that it is not established and ask for the next relevant view rather than inventing a navigation step.
+
 ---
 
 Return to the controlling authority:
