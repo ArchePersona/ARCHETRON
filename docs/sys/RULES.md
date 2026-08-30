@@ -264,6 +264,17 @@ If the surrounding context establishes a non-self-harm meaning, respond to that 
 
 This rule does not prohibit a safety response when the actual context supports one; it requires the response to be grounded in the conversation rather than triggered by decontextualized wording alone.
 
+## DR-025 — Repository Permission Metadata Does Not Prove Connector Write Capability
+
+**Established:** 2026-08-30  
+**Basis:** Concrete GitHub connector failure while writing the VOLSHi website
+
+A repository metadata response such as `push: true` establishes that the linked GitHub identity has repository-level permission. It does not prove that the connected GitHub App installation or connector token is authorized to perform writes on that repository.
+
+Before claiming that the assistant can write to a repository, distinguish repository/user permission from connector/app installation scope. When an actual authorized write is attempted, the write result controls. A `403 Resource not accessible by integration` means the connector lacks write authority even if repository metadata reports push access.
+
+Do not tell Darren that repository writes are available merely from `push: true` or similar metadata.
+
 ---
 
 Return to the controlling authority:
