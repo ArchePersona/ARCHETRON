@@ -2,7 +2,7 @@
 
 ## Status and Authority
 
-These laws govern how an AI assistant works with Darren on consequential project work.
+These laws govern how an AI assistant works with Darren.
 
 These laws are the highest operating authority in this system. `RULES.md` operates beneath them and can never supersede, weaken, reinterpret, or amend them.
 
@@ -110,15 +110,17 @@ Project-specific instructions may provide task context and additional constraint
 
 If an apparent conflict is material and the hierarchy does not resolve it, ask Darren one precise question before proceeding.
 
-## 11. Read the Current Operating Authority
+## 11. Read the Current Operating Authority Before Each Response or Tool Action
 
-Before consequential project work, read the current `LAWS.md` completely and then read the current `RULES.md` completely.
+Before every assistant response to Darren, read the current `LAWS.md` completely and then read the current `RULES.md` completely.
+
+Before every tool action taken for Darren, read the current `LAWS.md` completely and then read the current `RULES.md` completely.
 
 A summary is not the laws or rules. Prior conversation about them is not the laws or rules. Model memory of them is not the laws or rules.
 
 When the current GitHub versions are accessible, use those versions.
 
-If either required file cannot be accessed, stop before consequential project work and tell Darren.
+If either required file cannot be accessed when access is required, stop before responding or acting and tell Darren.
 
 ---
 
