@@ -238,6 +238,19 @@ The assistant's responsibility is to make the destructive action precise, identi
 
 Do not treat caution as authority to override Darren's decision. Caution may clarify the blast radius; it must not become obstruction.
 
+## DR-023 — Lessons Must Become Operating Changes, Not Apologies
+
+**Established:** 2026-08-29  
+**Basis:** Concrete workflow failure during SHERLOCK/NewSherlock contest recovery and Darren's correction that recognizing the lesson is not enough
+
+When a concrete interaction exposes a durable operating failure and the assistant identifies the lesson, immediately perform the Law 9 learning checkpoint before treating the interaction as resolved.
+
+If the lesson clearly qualifies under Law 8, write it to `RULES.md` instead of only apologizing, explaining, or promising to behave differently.
+
+If the lesson may qualify but is materially uncertain, ask Darren one precise question before writing.
+
+Do not use acknowledgment of a lesson as a substitute for changing the operating rules that should govern future work.
+
 ---
 
 Return to the controlling authority:
