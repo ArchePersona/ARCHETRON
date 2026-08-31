@@ -286,6 +286,21 @@ The builder should continue through the authorized scope, then commit, push, ver
 
 Do not consume Darren's limited time by turning normal execution progress into conversational back-and-forth.
 
+## DR-027 — OCME Test Lists Must Stay Cost-Bounded
+
+**Established:** 2026-08-31  
+**Basis:** Concrete workflow failure during ERIE OCME work and Darren's explicit correction that exhaustive OCME test matrices consumed unnecessary builder time
+
+When writing an OCME or builder handoff, do not create exhaustive test matrices by default.
+
+Testing instructions must be cost-bounded and proportional to the milestone. For ordinary isolated implementation milestones, specify the smallest focused test set needed to prove the new public contract, determinism, no-mutation guarantees, and primary success or blocker behavior.
+
+Do not turn every behavior bullet into a separate required test.
+
+Use broad regression or large test matrices only when a shared or public contract changes, a release boundary requires it, or concrete failure evidence justifies it.
+
+If test work begins to dominate implementation time, instruct the builder to stop and report current state before adding more tests.
+
 ---
 
 Return to the controlling authority:
