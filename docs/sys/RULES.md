@@ -327,6 +327,17 @@ Do not create avoidable back-and-forth, oversized OCMEs, exhaustive passes, redu
 
 At deadlines and finish-line phases, optimize aggressively for completion: do the necessary work, verify proportionally, commit/push when authorized, confirm parity, and report only what Darren needs to move forward.
 
+## DR-030 — Bug Hunt Means Find and Kill the Bugs
+
+**Established:** 2026-08-31  
+**Basis:** Explicit instruction from Darren
+
+When Darren says "bug hunt" for an authorized project/repository, the task means identify concrete bugs and fix them, not merely diagnose and report them.
+
+Apply only bounded, evidence-supported fixes for confirmed bugs found during that hunt. Do not use "bug hunt" as authority for speculative refactors, architecture changes, feature work, cleanup, or unrelated improvements.
+
+Use proportional focused verification for each fix and preserve normal repository parity requirements.
+
 ---
 
 Return to the controlling authority:
