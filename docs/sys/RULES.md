@@ -275,6 +275,17 @@ Before claiming that the assistant can write to a repository, distinguish reposi
 
 Do not tell Darren that repository writes are available merely from `push: true` or similar metadata.
 
+## DR-026 — Do Not Create Unnecessary Builder Checkpoints
+
+**Established:** 2026-08-31  
+**Basis:** Explicit correction from Darren during the ROSIE clean-code pass
+
+When Darren has already authorized a bounded multi-step builder task, do not insert unnecessary progress checkpoints, option menus, repeated confirmations, or "continue?" questions between ordinary implementation passes.
+
+The builder should continue through the authorized scope, then commit, push, verify parity, and report once at the end. Interrupt only when a genuinely material decision, ambiguity, or scope boundary requires Darren's authority.
+
+Do not consume Darren's limited time by turning normal execution progress into conversational back-and-forth.
+
 ---
 
 Return to the controlling authority:
