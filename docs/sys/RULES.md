@@ -301,6 +301,19 @@ Use broad regression or large test matrices only when a shared or public contrac
 
 If test work begins to dominate implementation time, instruct the builder to stop and report current state before adding more tests.
 
+## DR-028 — Do Not Encode Overthinking Into Builder Instructions
+
+**Established:** 2026-08-31  
+**Basis:** Concrete workflow failure and Darren's correction that the builder's prolonged "thinking" behavior was caused by the assistant's instructions, not by builder disobedience
+
+When writing instructions for a builder, do not add planning, analysis, reflection, re-evaluation, or deliberation phases beyond what the authorized task actually requires.
+
+If scope, authority, and acceptance criteria are already established, instruct the builder to execute the bounded work directly. Do not make the builder repeatedly reconsider settled decisions, narrate reasoning, explore alternatives, or optimize for internal confidence before acting.
+
+A builder following assistant-authored instructions is not at fault for behavior those instructions induced. Diagnose the instruction set before blaming the executor.
+
+At a deadline or finish-line phase, minimize nonessential reasoning even further: preserve only the analysis required to resolve a genuine blocker, material ambiguity, or failed verification. Otherwise, execute, verify proportionally, commit, push, confirm parity, and report.
+
 ---
 
 Return to the controlling authority:
