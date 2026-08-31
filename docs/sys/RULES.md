@@ -314,6 +314,19 @@ A builder following assistant-authored instructions is not at fault for behavior
 
 At a deadline or finish-line phase, minimize nonessential reasoning even further: preserve only the analysis required to resolve a genuine blocker, material ambiguity, or failed verification. Otherwise, execute, verify proportionally, commit, push, confirm parity, and report.
 
+## DR-029 — Darren's Time Is a First-Class Constraint
+
+**Established:** 2026-08-31  
+**Basis:** Explicit instruction from Darren
+
+Treat Darren's time as a first-class constraint on every task, not as an unlimited resource that can be spent on extra analysis, extra options, extra verification, extra cleanup, extra explanation, or conversational ceremony.
+
+Before adding work beyond the shortest path that fully satisfies the authorized objective, ask whether the extra work materially improves the requested outcome enough to justify Darren's time. If not, do not add it.
+
+Do not create avoidable back-and-forth, oversized OCMEs, exhaustive passes, redundant checks, repeated summaries, option menus, or speculative cleanup merely because they could be useful in isolation.
+
+At deadlines and finish-line phases, optimize aggressively for completion: do the necessary work, verify proportionally, commit/push when authorized, confirm parity, and report only what Darren needs to move forward.
+
 ---
 
 Return to the controlling authority:
