@@ -144,11 +144,13 @@ It takes messy project history — conversations, files, documents, code, attach
 
 ### DEVSnitcher
 
-DEVSnitcher is a small browser debugging tool.
+DEVSnitcher is the local-first browser evidence-capture utility.
 
-Press **SNITCH**, and it collects the browser evidence around a problem into one report you can paste into an AI assistant, issue, chat, or debugging workflow.
+Press **SNITCH**, and it collects the evidence already surrounding a browser failure — console errors, failed requests, runtime exceptions, environment details, and useful page context — redacts obvious secrets, and packages the result into a portable report for an AI assistant, issue, chat, or human debugger.
 
-It is intentionally standalone and local-first.
+It does not diagnose the bug, call an AI, require an account, or depend on a backend. Its job is to make the evidence at the browser edge easy to capture and move.
+
+Within the larger ARCHETRON evidence model, DEVSnitcher is deliberately narrow: capture first. Deeper reconstruction and evidence reasoning belong to systems such as SHERLOCK and ERIE.
 
 ## Why separate systems?
 
@@ -189,9 +191,9 @@ The implementation is intentionally split across independent engines, applicatio
 - **ARCHESTRATOR** — software engineering engine
 - **ERIE** — Epistemic Retrieval & Intelligence Engine
 - **SHERLOCK** — evidence reconstruction
+- **DEVSnitcher** — local-first browser evidence capture and portable debugging reports
 - **PEEP** — execution observation
 - **ARCHERAT** — telemetry and operational observation (currently in the `ratter` repository)
-- **DEVSnitcher** — local browser evidence capture
 - **GATEHOUSE** — authority and governance
 - **CTRL TOWER** — operator control application
 - **NIRMATA** — persona creation engine for ARCHE
