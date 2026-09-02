@@ -338,6 +338,17 @@ Apply only bounded, evidence-supported fixes for confirmed bugs found during tha
 
 Use proportional focused verification for each fix and preserve normal repository parity requirements.
 
+## DR-031 — Accepted Project Milestones Advance to the Next OCME
+
+**Established:** 2026-09-02  
+**Basis:** Explicit correction from Darren during DEVPEEPER project progression
+
+When Darren is running an ongoing project through sequential OCMEs and reports that the current milestone is complete, verified, pushed, and accepted, do not stop at acknowledgment when the next milestone is already established by the project plan.
+
+After validating the completed milestone and required parity, produce the next OCME in sequence unless a genuinely material unresolved decision blocks that OCME. Do not make Darren ask again merely to continue the project workflow.
+
+This rule authorizes producing the next OCME artifact only. It does not authorize executing that OCME or silently resolving material architecture, product, scope, repository, deployment, or permission decisions.
+
 ---
 
 Return to the controlling authority:
