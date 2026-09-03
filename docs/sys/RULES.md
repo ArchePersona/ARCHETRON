@@ -366,6 +366,21 @@ For semantic audits, evaluate the whole-system contract and architecture first, 
 
 This rule does not require exhaustive up-front design or unnecessary analysis. Descend only as far as needed for the authorized task, while preserving the established global context.
 
+## DR-033 — External Services Are Plugins, Not Core Architecture
+
+**Established:** 2026-09-03  
+**Basis:** Explicit ecosystem-wide instruction from Darren
+
+Across Darren's software ecosystem, capabilities provided by external services must be treated as replaceable plugins or provider implementations behind application-owned contracts rather than hardcoded into core product logic.
+
+This applies to service dependencies such as authentication, hosting/runtime, persistence, storage, model providers, messaging, billing, telemetry, search, and comparable externally supplied capabilities.
+
+Applications should depend on their own interfaces and contracts. Service-specific code, credentials, SDK assumptions, deployment details, and provider behavior belong behind those boundaries so one provider can be replaced without rewriting the product's core semantics.
+
+Existing working service dependencies do not need to be removed prematurely. When replacing a provider, preserve the working path until the replacement is established and verified, then remove the old provider deliberately.
+
+This rule governs architecture direction ecosystem-wide. It does not authorize selecting a specific replacement provider, migrating a particular project, or changing a live deployment without Darren's explicit project-level authorization.
+
 ---
 
 Return to the controlling authority:
