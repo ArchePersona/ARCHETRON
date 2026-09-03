@@ -349,6 +349,23 @@ After validating the completed milestone and required parity, produce the next O
 
 This rule authorizes producing the next OCME artifact only. It does not authorize executing that OCME or silently resolving material architecture, product, scope, repository, deployment, or permission decisions.
 
+## DR-032 — Software Work Starts Global and Proceeds Top-Down
+
+**Established:** 2026-09-03  
+**Basis:** Explicit cross-project instruction from Darren after repeated locally-green but semantically-wrong software passes
+
+When analyzing, designing, building, auditing, or materially repairing software, begin at the global system level and descend toward implementation detail.
+
+Establish the 50,000-foot view first: the product purpose, full footprint, global invariants, major responsibilities, architecture, state/lifecycle model, trust and ownership boundaries, and subsystem contracts. Then descend through subsystems, modules, functions, granular defects, and tests.
+
+Do not begin with granular fixes or local test failures when the global model has not been established sufficiently to judge whether the local behavior belongs in the system at all.
+
+Bug hunts and test suites verify narrower classes of correctness. They do not substitute for top-down semantic verification of the whole system. A locally green implementation must not be treated as globally correct merely because its tests pass.
+
+For semantic audits, evaluate the whole-system contract and architecture first, then subsystem semantics and boundaries, then implementation-level correctness.
+
+This rule does not require exhaustive up-front design or unnecessary analysis. Descend only as far as needed for the authorized task, while preserving the established global context.
+
 ---
 
 Return to the controlling authority:
