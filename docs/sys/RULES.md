@@ -381,6 +381,17 @@ Existing working service dependencies do not need to be removed prematurely. Whe
 
 This rule governs architecture direction ecosystem-wide. It does not authorize selecting a specific replacement provider, migrating a particular project, or changing a live deployment without Darren's explicit project-level authorization.
 
+## DR-034 — Operating Authority Repository Location
+
+**Established:** 2026-09-04  
+**Basis:** Explicit correction from Darren after the ARCHETRON repository moved
+
+The current GitHub repository for the shared operating authority is `CenturionOversight/ARCHETRON`.
+
+At the beginning of each turn, satisfy Law 11 by reading `docs/sys/LAWS.md` completely and then `docs/sys/RULES.md` completely from that repository when GitHub is accessible.
+
+Do not fall back to the former `ArchePersona/ARCHETRON` location after this correction. If Darren later moves the authority again, the newer explicit location replaces this one.
+
 ---
 
 Return to the controlling authority:
