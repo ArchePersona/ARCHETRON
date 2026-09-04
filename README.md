@@ -4,11 +4,13 @@
 
 That is the question behind ARCHETRON.
 
+ARCHETRON is the technology ecosystem built by **VOLSHi**.
+
 AI is getting more capable very quickly. But being capable is not the same thing as being trustworthy.
 
 If an AI system is going to do important work, we need more than a good answer at the end. We need to know what happened while the work was being done. We need to know what information the system used, what changed, what failed, where human approval mattered, and whether the result can be checked later.
 
-ARCHETRON exists to build that missing layer.
+ARCHETRON exists to provide that missing layer.
 
 ## The thesis
 
@@ -31,11 +33,13 @@ Systems that can:
 - build software in a repeatable way
 - show enough evidence that the work can be checked later
 
-That is what ARCHETRON is building.
+Those systems form ARCHETRON.
 
-## ARCHETRON is also the platform
+## ARCHETRON is the ecosystem
 
-ARCHETRON is the company name, but it is also the name of the complete system when the pieces are working together.
+**VOLSHi is the company. ARCHETRON is the ecosystem.**
+
+ARCHETRON is the collective system formed when its independent engines, applications, sensing layers, governance components, and operator controls work together.
 
 Each project solves a different part of the problem. Some are useful on their own. Together, they form ARCHETRON.
 
@@ -162,15 +166,15 @@ The thing that decides what the data supports should not also decide where cogni
 
 The application a person uses should not have to own the engine underneath it.
 
-ARCHETRON is built around clear boundaries so each part can be inspected, replaced, tested, and improved without turning the entire platform into one giant black box.
+ARCHETRON is built around clear boundaries so each part can be inspected, replaced, tested, and improved without turning the entire ecosystem into one giant black box.
 
-## What we are trying to prove
+## What VOLSHi is trying to prove
 
-The long-term bet is that trustworthy autonomous intelligence will need more than models.
+The long-term bet behind ARCHETRON is that trustworthy autonomous intelligence will need more than models.
 
 It will need infrastructure for observation, evidence, governance, attention, execution, history, and human control.
 
-We are building those pieces now.
+VOLSHi is building those pieces now.
 
 Not because AI needs more dashboards.
 
@@ -198,4 +202,4 @@ The implementation is intentionally split across independent engines, applicatio
 - **CTRL TOWER** — operator control application
 - **NIRMATA** — persona creation engine for ARCHE
 
-**Together, they are ARCHETRON.**
+**Together, they are ARCHETRON. ARCHETRON is a VOLSHi technology ecosystem.**
