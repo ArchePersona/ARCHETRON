@@ -52,7 +52,7 @@ Each project solves a different part of the problem. Some are useful on their ow
           └───────────────────┼─────────────────────┘
                               │
                          GOVERN / WATCH
-                    GATEHOUSE • ARCHERAT
+                      BOUNCER • RATTER
                               │
                          HUMAN CONTROL
                            CTRL TOWER
@@ -106,19 +106,17 @@ PEEP does not reason, build, or govern.
 
 **It sees.**
 
-### ARCHERAT
+### RATTER
 
-ARCHERAT is the observation and telemetry engine.
+RATTER is the observation and telemetry engine.
 
 It gives operators a live view of what systems are doing and preserves the operational record needed to inspect behavior later.
 
-The current code still lives in the repository historically named `ratter`; the product name is ARCHERAT.
+### BOUNCER
 
-### GATEHOUSE
+BOUNCER is the authority and governance engine.
 
-GATEHOUSE is the authority and governance engine.
-
-When something crosses an important boundary, GATEHOUSE decides whether it should be approved, denied, paused, resumed, escalated, revoked, or sent to a human for authorization.
+When something crosses an important boundary, BOUNCER decides whether it should be approved, denied, paused, resumed, escalated, revoked, or sent to a human for authorization.
 
 ### CTRL TOWER
 
@@ -190,15 +188,15 @@ The implementation is intentionally split across independent engines, applicatio
 
 ## Ecosystem repositories
 
-- **ARCHE** — attention engine
-- **ARCHEMADA** — software engineering application
-- **ARCHESTRATOR** — software engineering engine
-- **ERIE** — Epistemic Retrieval & Intelligence Engine
-- **SHERLOCK** — evidence reconstruction
-- **DEVSnitcher** — local-first browser evidence capture and portable debugging reports
-- **PEEP** — execution observation
-- **ARCHERAT** — telemetry and operational observation (currently in the `ratter` repository)
-- **GATEHOUSE** — authority and governance
+- **[ARCHE](https://github.com/ArchePersona/ARCHE-info)** — attention engine
+- **[ARCHEMADA](https://github.com/ArchePersona/ARCHEMADA-info)** — software engineering application
+- **[ARCHESTRATOR](https://github.com/CenturionOversight/ARCHESTRATOR-info)** — software engineering engine
+- **[ERIE](https://github.com/ArchePersona/ERIE-info)** — Epistemic Retrieval & Intelligence Engine
+- **[SHERLOCK](https://github.com/ArchePersona/SHERLOCK-info)** — evidence reconstruction
+- **[DEVSnitcher](https://github.com/CenturionOversight/DEVSnitcher)** — local-first browser evidence capture and portable debugging reports
+- **[PEEP](https://github.com/ArchePersona/PEEP-info)** — execution observation
+- **[RATTER](https://github.com/ArchePersona/RATTER-info)** — telemetry and operational observation
+- **BOUNCER** — authority and governance
 - **CTRL TOWER** — operator control application
 - **NIRMATA** — persona creation engine for ARCHE
 
