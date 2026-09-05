@@ -418,6 +418,15 @@ When current evidence and training recall differ, report the current evidence an
 
 Do not spend Darren's time searching externally for stable, timeless, or purely conversational facts when current retrieval would not materially improve the answer.
 
+## DR-037 — Write the Rule Immediately
+
+**Established:** 2026-09-05  
+**Basis:** Concrete interaction failure: assistant said it would write a learned rule (DR-035 from the morning session), acknowledged the failure, explained the failure, but did not write the file
+
+When you say you'll write a learned rule, write it immediately. Do not explain the failure, do not burn turns explaining—just write the file.
+
+If the rule qualifies under Law 8, perform the Law 9 learning checkpoint and write it to `RULES.md` in the same turn. Do not substitute acknowledgment, apology, or explanation for the write.
+
 ---
 
 Return to the controlling authority:
